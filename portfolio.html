@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio Website</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="portstyle.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/1058c5e5e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"></a>
+    </header>
+    <div class="hero">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn">Subscribe</a>
+        </nav>
+        <div class="content">
+            <span class="title">A BIT ABOUT ME</span>
+            <h1>Hello, I'm <span>Bhargavi Gadhamsetty</span></h1>
+            <p>I am currently a Master's student at Vignan's Lara institute of Technology and sciences.This is My portfolio Website.</p>
+            <a href="resume.pdf" target="_blank" download class="btn">DOWNLOAD CV</a>
+        </div>
+        <div class="images">
+            <img src="girl.png" class="girl">
+        </div>     
+    </div>
+    <!------------------------about------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="women.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Looking for a career in a progressive organization that gives me a scope to update knowledge and skills in accordance with technologies and a part of team that dynamically works towards positive
+                        growth of the organization and gain satisfaction </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick = "opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('achievements&certifications')">Achievements & Certifications</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Developing websites</li>
+                            <li><span>Programming Launguages</span><br> C, Java, Python, SQL, CSS, HTML</li>
+                            <li><span>Java Script</span><br>Building Websites</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id= "achievements&certifications">
+                        <ul>
+                            <li><span> Java </span><br> Certificate From GreatLearning</li>
+                            <li><span> C Programming</span><br> Certificate From GreatLearning</li>
+                            <li><span> Python </span><br> Certificate From GreatLearning</li>
+                            <li><span> Project Management Fundementals </span><br> Certificate From IBM Skill Build </li>
+                            <li><span> Employablility Skill development Certification  </span><br> Certificate From Naandi Foundation </li>
+                            <li><span> Front end web development webinar</span><br> Certificate From Sprint</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span> 2022 - Current </span><br> MCA at Vignan's Lara, Vadlamudi </li>
+                            <li><span> 2019 - 2022 </span><br> Completed BA[MAS] at Sri padmavathi womens Degree College, Tirupati</li>
+                            <li><span> 2017 - 2019 </span><br> Completed Intermediate at Sri Sadhana Junior College, Markapur </li>
+                            <li><span> 2016 - 2017 </span><br> SSC at Om Sai Vikas Vidhyanikethan , Markapur </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------services----------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web Design</h2>
+                    <p>Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI refers to the screens, buttons, toggles, icons, and other visual elements that you interact with when using a website, app, or electronic device. UX refers to the entire interaction you have with a product, including how you feel about the interaction.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-grid-2"></i>
+                    <h2>App Design</h2>
+                    <p> App design is the look and feel of a mobile application. This includes all of the visual elements and interactive elements that impact how the app functions. </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------Blog--------------------------->
+    <div id="blog">
+        <div class="container">
+            <h1 class="sub-title">My Blogs</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="pay.png">
+                    <div class="layer">
+                        <h3>Payment App</h3>
+                        <p>This app helps you to send or recieve payment from your friends and family.
+                            Download it from google play store</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="music.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>This app helps you to listen music according to your mood.
+                            Download it from google play store</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="shop.png">
+                    <div class="layer">
+                        <h3>Shopping App</h3>
+                        <p>This app connects u to the talented people around the world.
+                            Download it from google paly store</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn1">See More</a>
+    </div>
+    <!---------------------------contact------------------------------>
+    <div id="contact"
+        <div class="main">
+            <div class="row">
+                <div class="contactform">
+                    <h1>For more details</h1>
+                    <form>
+                        <div class="mb-3">
+                            <label for="Name" class="form-label">Name</label>
+                            <input type="name" class="form-control" id="Email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email & password with others.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="phone" class="form-control" id="Phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="details" class="form-label">More details</label>
+                            <input type="details" class="form-control" id="details">
+                        </div>
+                        <div class="mb-3" id="form-check">
+                            <input type="checkbox" class="form-check-input" id="isclient">
+                            <label class="form-check-label" for="isclient">I accept the  terms and conditions</label>
+                        </div>
+                        <button type="submit" class="btn btn-sm">Log in</button>
+                    </form>
+                </div>
+                <div class="contact-left">
+                    <h1 class="'sub-title">For Contact:</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> bhargavigadhamsetty@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 6XXXXXXXX4 </p>
+                    <div class="home-sci">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------javascript----------------------->
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname)
+            {
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+        
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+</body>
+</html>
